@@ -1,0 +1,11 @@
+name: Test PRs to acc
+
+on:
+  pull_request:
+    branches: [master]
+    types: [opened, edited, synchronize]
+
+jobs:
+
+  test:
+    uses: guidion-digital/terrappy/.github/workflows/tfc-test-helper-module-enterprise.yaml@beta0.0.31
