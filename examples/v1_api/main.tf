@@ -18,7 +18,7 @@ module "api_keys" {
 
   quota_settings = {
     limit  = 10
-    offset = 2
+    offset = 0
     period = "DAY"
   }
 
