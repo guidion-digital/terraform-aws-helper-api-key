@@ -6,6 +6,10 @@ locals {
 resource "aws_api_gateway_api_key" "this" {
   name = var.name
   tags = var.tags
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
 
 resource "aws_api_gateway_usage_plan" "this" {
